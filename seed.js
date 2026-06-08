@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import { dirname, resolve } from 'path';
-dotenv.config({ path: resolve(dirname(fileURLToPath(import.meta.url)), '..', '.env') });
+dotenv.config({ path: resolve(dirname(fileURLToPath(import.meta.url)), '.env') });
 
 import mongoose from 'mongoose';
 import User from './models/User.js';
